@@ -192,7 +192,7 @@ PersistentMinimongo2.prototype = {
                                 }
                             }
 							if (init) {
-								Session.set("persistence-"-self.key+"-loaded", true);
+								Session.set("persistent-"+self.col._name+"-loaded", true);
 							}
                         }
                     }, 1);
