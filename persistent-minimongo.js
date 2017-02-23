@@ -191,6 +191,9 @@ PersistentMinimongo2.prototype = {
                                     self.store.setItem(self.key, self.list, function(){});
                                 }
                             }
+							if (init) {
+								Session.set("persistence-"-self.key+"-loaded", true);
+							}
                         }
                     }, 1);
 
