@@ -197,8 +197,15 @@ PersistentMinimongo2.prototype = {
                         }
                     }, 1);
 
-                }
-            }
+                } else {
+					//list is not initialized.
+					console.log("persistent-minimongo: local stored list was null, setting to empty list: "+self.col._name);
+					Session.set("persistent-"+self.col._name+"-loaded", true);
+				}
+            } else {
+				console.warn("persistent-minimongo: error retrieving locally stored "+self.col._name);
+				Session.set("persistent-"+self.col._name+"-loaded", true);
+			}
         });
     },
     /**

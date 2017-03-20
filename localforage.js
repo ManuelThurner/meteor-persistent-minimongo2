@@ -1570,9 +1570,9 @@ requireModule('promise/polyfill').polyfill();
             return new Promise(function (resolve, reject) {
                 if (typeof _systemImportTransformerGlobalIdentifier.define === 'function' && _systemImportTransformerGlobalIdentifier.define.amd) {
                     _systemImportTransformerGlobalIdentifier.require(['localforageSerializer'], resolve, reject);
-                } else if (typeof module !== 'undefined' && (module.exports && typeof require !== 'undefined') || typeof module !== 'undefined' && (module.component && (_systemImportTransformerGlobalIdentifier.require && _systemImportTransformerGlobalIdentifier.require.loader === 'component'))) {
+                /*} else if (typeof module !== 'undefined' && (module.exports && typeof require !== 'undefined') || typeof module !== 'undefined' && (module.component && (_systemImportTransformerGlobalIdentifier.require && _systemImportTransformerGlobalIdentifier.require.loader === 'component'))) {
                     resolve(require('./../utils/serializer'));
-                } else {
+                */} else {
                     resolve(_systemImportTransformerGlobalIdentifier['localforageSerializer']);
                 }
             }).then(function (lib) {
@@ -1895,9 +1895,9 @@ requireModule('promise/polyfill').polyfill();
             return new Promise(function (resolve, reject) {
                 if (typeof _systemImportTransformerGlobalIdentifier.define === 'function' && _systemImportTransformerGlobalIdentifier.define.amd) {
                     _systemImportTransformerGlobalIdentifier.require(['localforageSerializer'], resolve, reject);
-                } else if (typeof module !== 'undefined' && (module.exports && typeof require !== 'undefined') || typeof module !== 'undefined' && (module.component && (_systemImportTransformerGlobalIdentifier.require && _systemImportTransformerGlobalIdentifier.require.loader === 'component'))) {
+                /*} else if (typeof module !== 'undefined' && (module.exports && typeof require !== 'undefined') || typeof module !== 'undefined' && (module.component && (_systemImportTransformerGlobalIdentifier.require && _systemImportTransformerGlobalIdentifier.require.loader === 'component'))) {
                     resolve(require('./../utils/serializer'));
-                } else {
+                */} else {
                     resolve(_systemImportTransformerGlobalIdentifier['localforageSerializer']);
                 }
             }).then(function (lib) {
@@ -2501,9 +2501,9 @@ requireModule('promise/polyfill').polyfill();
                                 driverPromise = new Promise(function (resolve, reject) {
                                     if (typeof _systemImportTransformerGlobalIdentifier.define === 'function' && _systemImportTransformerGlobalIdentifier.define.amd) {
                                         _systemImportTransformerGlobalIdentifier.require(['asyncStorage'], resolve, reject);
-                                    } else if (typeof module !== 'undefined' && (module.exports && typeof require !== 'undefined') || typeof module !== 'undefined' && (module.component && (_systemImportTransformerGlobalIdentifier.require && _systemImportTransformerGlobalIdentifier.require.loader === 'component'))) {
+                                    /*} else if (typeof module !== 'undefined' && (module.exports && typeof require !== 'undefined') || typeof module !== 'undefined' && (module.component && (_systemImportTransformerGlobalIdentifier.require && _systemImportTransformerGlobalIdentifier.require.loader === 'component'))) {
                                         resolve(require('./drivers/indexeddb'));
-                                    } else {
+                                    */} else {
                                         resolve(_systemImportTransformerGlobalIdentifier['asyncStorage']);
                                     }
                                 });
@@ -2512,9 +2512,9 @@ requireModule('promise/polyfill').polyfill();
                                 driverPromise = new Promise(function (resolve, reject) {
                                     if (typeof _systemImportTransformerGlobalIdentifier.define === 'function' && _systemImportTransformerGlobalIdentifier.define.amd) {
                                         _systemImportTransformerGlobalIdentifier.require(['localStorageWrapper'], resolve, reject);
-                                    } else if (typeof module !== 'undefined' && (module.exports && typeof require !== 'undefined') || typeof module !== 'undefined' && (module.component && (_systemImportTransformerGlobalIdentifier.require && _systemImportTransformerGlobalIdentifier.require.loader === 'component'))) {
+                                    /*} else if (typeof module !== 'undefined' && (module.exports && typeof require !== 'undefined') || typeof module !== 'undefined' && (module.component && (_systemImportTransformerGlobalIdentifier.require && _systemImportTransformerGlobalIdentifier.require.loader === 'component'))) {
                                         resolve(require('./drivers/localstorage'));
-                                    } else {
+                                    */} else {
                                         resolve(_systemImportTransformerGlobalIdentifier['localStorageWrapper']);
                                     }
                                 });
@@ -2523,9 +2523,9 @@ requireModule('promise/polyfill').polyfill();
                                 driverPromise = new Promise(function (resolve, reject) {
                                     if (typeof _systemImportTransformerGlobalIdentifier.define === 'function' && _systemImportTransformerGlobalIdentifier.define.amd) {
                                         _systemImportTransformerGlobalIdentifier.require(['webSQLStorage'], resolve, reject);
-                                    } else if (typeof module !== 'undefined' && (module.exports && typeof require !== 'undefined') || typeof module !== 'undefined' && (module.component && (_systemImportTransformerGlobalIdentifier.require && _systemImportTransformerGlobalIdentifier.require.loader === 'component'))) {
+                                    /*} else if (typeof module !== 'undefined' && (module.exports && typeof require !== 'undefined') || typeof module !== 'undefined' && (module.component && (_systemImportTransformerGlobalIdentifier.require && _systemImportTransformerGlobalIdentifier.require.loader === 'component'))) {
                                         resolve(require('./drivers/websql'));
-                                    } else {
+                                    */} else {
                                         resolve(_systemImportTransformerGlobalIdentifier['webSQLStorage']);
                                     }
                                 });
